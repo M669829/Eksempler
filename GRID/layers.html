@@ -18,13 +18,16 @@
         background: lightblue;
         grid-column: 1 / 2; /* kolonne 1 */
         grid-row: 1 / 2; /* rad 1 */
+        z-index: -1; /* bak alt annet */
       }
 
       .overlay {
         background-color: none;
-        background: rgba(255, 0, 0, 0.5); /* halvtransparent rød */
+        text-align: center;
+        background: rgba(255, 0, 0, 0.05); /* halvtransparent rød */
         grid-column: 1 / 2; /* kolonne 1 */
         grid-row: 1 / 2; /* rad 1 */
+        z-index: 1;
       }
 
       .tekst {
@@ -36,6 +39,7 @@
         background: rgba((255, 255, 255, 0.05)); /* halvtransparent hvit */
         grid-column: 1 / 2; /* kolonne 1 */
         grid-row: 1 / 2; /* rad 1 */
+        z-index: 0;
       }
     </style>
   </head>

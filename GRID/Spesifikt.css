@@ -11,6 +11,9 @@ body {
   /*justify-content: center;
   align-items: center;*/
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid {
@@ -59,13 +62,15 @@ body {
 .c {
   grid-column: 1 / 2; /* kolonne 1 */
   grid-row: 2 / 4; /* rad 2-3 */
+  z-index: 4; /* gjør at E vises oppå */
 }
+
 .d {
   grid-column: 2 / 4; /* kolonne 2-3 */
   grid-row: 3 / 4; /* rad 3 */
 }
 .e {
-  grid-column: 1 / 3; /* overlapp – ligger delvis over C */
+  grid-column: 1 / 4; /* overlapp – ligger delvis over C */
   grid-row: 2 / 3;
   z-index: 2; /* gjør at E vises oppå */
 }
